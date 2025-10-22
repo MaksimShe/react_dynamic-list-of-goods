@@ -37,7 +37,7 @@ export const App: React.FC = () => {
         break;
     }
 
-    items?.then(item => setListGoods(item));
+    items?.then(item => setListGoods(item)).catch();
   }, [changeListOfGoods]);
 
   return (
