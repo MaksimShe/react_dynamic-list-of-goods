@@ -37,7 +37,8 @@ export const App: React.FC = () => {
         break;
     }
 
-    items?.then(item => setListGoods(item)).catch();
+    // eslint-disable-next-line no-console
+    items?.then(item => setListGoods(item)).catch(console.error);
   }, [changeListOfGoods]);
 
   return (
